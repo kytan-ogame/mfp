@@ -5,7 +5,8 @@ import {createGenerateClassName, StylesProvider} from "@material-ui/core";
 import Landing  from './components/Landing'
 import Pricing  from './components/Pricing'
 const generateClassName = createGenerateClassName({
-    productionPrefix: 'marketing',
+    disableGlobal: true,
+    productionPrefix: 'marketing',seed: 'mrktg-seed'
 });
 
 export default () => {

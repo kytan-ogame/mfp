@@ -5,7 +5,9 @@ import Header from "./components/Header";
 import {createGenerateClassName, StylesProvider} from "@material-ui/core";
 
 const generateClassName = createGenerateClassName({
-    productionPrefix: 'container',
+    disableGlobal: true,
+    productionPrefix: 'container',seed: 'cntnr-seed'
+
 });
 export default () => {
     return <>
